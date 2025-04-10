@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Our Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .restaurant-primary {
+            background-color: #E63946;
+        }
+        .restaurant-primary-text {
+            color: #E63946;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center">
+            <i class="fas fa-utensils text-3xl restaurant-primary-text mr-2"></i>
+            <span class="text-xl font-bold">Savory Bites</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="hover:text-gray-600">Home</a>
+            <a href="menu.html" class="hover:text-gray-600">Menu</a>
+            <a href="about.html" class="restaurant-primary-text font-semibold">About</a>
+            <a href="contact.html" class="hover:text-gray-600">Contact</a>
+            <a href="reservation.html" class="restaurant-primary text-white px-6 py-2 rounded-full hover:bg-red-600 transition">Reservations</a>
+        </div>
+        <button class="md:hidden text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+             alt="Our Chef" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
+            <p class="text-lg">A culinary journey since 2010</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">From Humble Beginnings</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-gray-700 mb-4">Founded in 2010 by Chef Marco Bellini, Savory Bites began as a small 12-seat bistro with a simple mission: to create memorable dining experiences through exceptional food and warm hospitality.</p>
+                    <p class="text-gray-700 mb-4">What started as a neighborhood gem quickly gained recognition for its innovative approach to traditional recipes, earning a Michelin Bib Gourmand in 2015.</p>
+                    <p class="text-gray-700">Today, we continue to honor our roots while embracing culinary innovation, sourcing ingredients from local farmers and artisans who share our commitment to quality.</p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Original Location" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Chef 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Chef Marco" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Marco Bellini</h3>
+                        <p class="text-gray-600 mb-2">Executive Chef/Owner</p>
+                        <p class="text-gray-700">Trained in Florence and Paris, Chef Marco brings 25 years of culinary expertise to every dish.</p>
+                    </div>
+                </div>
+                
+                <!-- Chef 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Chef Sophia" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Sophia Chen</h3>
+                        <p class="text-gray-600 mb-2">Pastry Chef</p>
+                        <p class="text-gray-700">Specializing in French patisserie, Chef Sophia creates our acclaimed dessert menu.</p>
+                    </div>
+                </div>
+                
+                <!-- Chef 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Chef Antoine" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Antoine Dubois</h3>
+                        <p class="text-gray-600 mb-2">Sommelier</p>
+                        <p class="text-gray-700">Our wine expert curates pairings that elevate every dining experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Philosophy -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Philosophy</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl mb-4 restaurant-primary-text">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Seasonal Ingredients</h3>
+                    <p class="text-gray-700">We change our menu quarterly to showcase the best local, seasonal produce.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4 restaurant-primary-text">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sustainable Practices</h3>
+                    <p class="text-gray-700">Zero-waste kitchen initiatives and responsible sourcing guide our operations.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4 restaurant-primary-text">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Culinary Craft</h3>
+                    <p class="text-gray-700">Traditional techniques meet modern innovation in every dish we create.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Savory Bites</h3>
+                    <p>Modern cuisine with traditional roots</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-gray-400">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
