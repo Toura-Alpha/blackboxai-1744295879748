@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .restaurant-primary {
+            background-color: #E63946;
+        }
+        .restaurant-primary-text {
+            color: #E63946;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center">
+            <i class="fas fa-utensils text-3xl restaurant-primary-text mr-2"></i>
+            <span class="text-xl font-bold">Savory Bites</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="hover:text-gray-600">Home</a>
+            <a href="menu.html" class="hover:text-gray-600">Menu</a>
+            <a href="about.html" class="hover:text-gray-600">About</a>
+            <a href="contact.html" class="restaurant-primary-text font-semibold">Contact</a>
+            <a href="reservation.html" class="restaurant-primary text-white px-6 py-2 rounded-full hover:bg-red-600 transition">Reservations</a>
+        </div>
+        <button class="md:hidden text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-64 flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+             alt="Restaurant Interior" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-lg">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Visit Us</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Location</h3>
+                            <p class="text-gray-700">123 Culinary Street<br>Gourmet City, GC 12345</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Hours</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Monday - Thursday</span>
+                                    <span>5pm - 10pm</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Friday - Saturday</span>
+                                    <span>5pm - 11pm</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Sunday</span>
+                                    <span>5pm - 9pm</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Contact</h3>
+                            <p class="text-gray-700 mb-2"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                            <p class="text-gray-700"><i class="fas fa-envelope mr-2"></i> info@savorybites.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-1">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200">
+                                <option>General Inquiry</option>
+                                <option>Private Events</option>
+                                <option>Feedback</option>
+                                <option>Press</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200"></textarea>
+                        </div>
+                        <button type="submit" class="restaurant-primary text-white px-6 py-3 rounded-lg hover:bg-red-600 transition w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Find Us</h2>
+            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573813345!2d-73.9878449242396!3d40.74844097138992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689784298409!5m2!1sen!2sus" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Savory Bites</h3>
+                    <p>Modern cuisine with traditional roots</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-gray-400">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
